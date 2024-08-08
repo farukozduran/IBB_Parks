@@ -5,23 +5,23 @@ using IBB_Nesine;
 
 namespace IBB_Nesine_API.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
+    //[ApiController]
+    //[Route("api/[controller]")]
     public class ParksController : Controller
     {
-        private readonly IDbConnection _db;
+        //private readonly IDbConnection _db;
         
-        public ParksController(IDbConnection db)
-        {
-            _db = db;
-        }
+        //public ParksController(IDbConnection db)
+        //{
+        //    _db = db;
+        //}
 
-        [HttpGet("GetParkByDistrict")]
-        public List<Park> GetParkByDistrict(string district)
-        {
-            var sql = "SELECT * FROM Parks WHERE District = @District";
-            var parks = _db.Query<Park>(sql, new {District = district}).ToList();
-            return parks;            
-        }
+        //[HttpGet("GetParkByDistrict")]
+        //public List<Park> GetParkByDistrict(string district)
+        //{
+        //    var sql = "SELECT * FROM Parks WHERE District = @District";
+        //    var parks = _db.Query<Park>(sql, new {District = district}).ToList();
+        //    return parks;            
+        //}
     }
 }

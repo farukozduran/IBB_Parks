@@ -41,28 +41,5 @@ using (HttpClient client = new())
                     commandType: CommandType.StoredProcedure);
             }
         }
-
-        var parameters = new DynamicParameters();
-
-        using(var connection = new SqlConnection(connectionString))
-        {
-            connection.Open();
-
-            foreach (var park in parks)
-            {
-                parameters.Add("@ParkId", park.ParkId);
-                parameters.Add("@ParkName", park.ParkName);
-                parameters.Add("@Lat", park.Lat);
-                parameters.Add("@Lng", park.Lng);
-                parameters.Add("@Capacity", park.Capacity);
-                parameters.Add("@EmptyCapacity", park.EmptyCapacity);
-                parameters.Add("@WorkHours", park.WorkHours);
-                parameters.Add("@ParkType", park.ParkType);
-                parameters.Add("@FreeTime", park.FreeTime);
-                parameters.Add("@District", park.District);
-                parameters.Add("@IsOpen", park.IsOpen);
-                connection.Execute("usp_AddPark", parameters, commandType: CommandType.StoredProcedure);
-            }
-        }        
     }
 }

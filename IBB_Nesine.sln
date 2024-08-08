@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBB_Nesine", "IBB_Nesine\IBB_Nesine.csproj", "{0FE561CE-FD6C-4894-AA08-4C4175929805}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBB_Nesine", "IBB_Nesine\IBB_Nesine.csproj", "{0FE561CE-FD6C-4894-AA08-4C4175929805}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBB_Nesine_API", "IBB_Nesine_API\IBB_Nesine_API.csproj", "{1E250E4F-790E-44BA-B699-5C06ABFBCAE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBB_Nesine_API", "IBB_Nesine_API\IBB_Nesine_API.csproj", "{1E250E4F-790E-44BA-B699-5C06ABFBCAE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBBNesine.Services", "IBBNesine.Services\IBBNesine.Services.csproj", "{1914EDFA-6406-4C89-8BFC-8D2AF71E053B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1E250E4F-790E-44BA-B699-5C06ABFBCAE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E250E4F-790E-44BA-B699-5C06ABFBCAE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E250E4F-790E-44BA-B699-5C06ABFBCAE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1914EDFA-6406-4C89-8BFC-8D2AF71E053B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1914EDFA-6406-4C89-8BFC-8D2AF71E053B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1914EDFA-6406-4C89-8BFC-8D2AF71E053B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1914EDFA-6406-4C89-8BFC-8D2AF71E053B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

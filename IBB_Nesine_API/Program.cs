@@ -1,9 +1,13 @@
+using IBBNesine.Services.Abstract;
+using IBBNesine.Services.Services;
 using System.Data;
 using System.Data.SqlClient;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddScoped<IDbConnection>(sp => new SqlConnection("Server=NSN-FOZDURAN\\SQLEXPRESS;Database=dapper;Trusted_connection=True;MultipleActiveResultSets=true;"));
+//builder.Services.AddScoped<IDbConnection>(sp => new SqlConnection("Server=NSN-FOZDURAN\\SQLEXPRESS;Database=dapper;Trusted_connection=True;MultipleActiveResultSets=true;"));
+
+builder.Services.AddScoped<IParkService, ParkService>();
 
 // Add services to the container.
 

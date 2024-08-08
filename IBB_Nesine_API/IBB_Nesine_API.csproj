@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\IBBNesine.Services\IBBNesine.Services.csproj" />
     <ProjectReference Include="..\IBB_Nesine\IBB_Nesine.csproj" />
   </ItemGroup>
 
